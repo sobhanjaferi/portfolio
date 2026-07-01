@@ -12,7 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="bg-black/95 text-white p-4 sm:p-15 sm:container mx-auto addTransition"
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

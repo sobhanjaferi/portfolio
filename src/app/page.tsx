@@ -1,7 +1,9 @@
+import Profile from "@/features/profile/profile";
+
 export default function Home() {
   return (
-    <>
-      <h1>hello world!</h1>
-    </>
+    <main>
+      <Profile />
+    </main>
   );
 }
