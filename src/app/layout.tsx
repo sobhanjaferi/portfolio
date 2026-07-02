@@ -18,14 +18,14 @@ export default function RootLayout({
       lang="en"
       className="bg-black/93 text-white sm:container sm:mx-auto addTransition"
     >
-      <body className="min-h-screen flex flex-col justify-start gap-5 sm:gap-7 p-4 pb-0 sm:p-15">
+      <body className="min-h-screen flex flex-col justify-between gap-5 sm:gap-7 p-4 pb-0 sm:p-15 sm:pb-0 relative">
         <header>
           <Header />
         </header>
 
         <main className="flex-1">{children}</main>
 
-        <footer className="w-full bg-white/7 border border-white/10 rounded-t-2xl flex justify-center items-center p-4 -mb-5">
+        <footer className="bg-white/7 border border-white/10 rounded-t-2xl flex justify-center items-center p-4 -mb-5 sm:-mb-7">
           <Footer />
         </footer>
       </body>
