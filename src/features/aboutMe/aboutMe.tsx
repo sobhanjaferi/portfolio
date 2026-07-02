@@ -6,16 +6,11 @@ import { IoLogoCss3 } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiHtml5, SiManjaro, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { FaSquareGithub } from "react-icons/fa6";
+import Cotntent from "@/components/content";
 
-function Content(): ReactNode {
+function AboutMe(): ReactNode {
   return (
-    <section className="w-full p-3 sm:p-7 bg-white/7 rounded-2xl border border-white/10">
-      <h1 className="text-2xl font-bold w-fit border-b-2 border-amber-300">
-        About Me
-      </h1>
-
-      <br />
-
+    <Cotntent title="About Me">
       <p className="text-white/70">
         Front-end developer with focus on React and Next.js interested in deep
         learning and implementing modern web development standard. despite not
@@ -72,8 +67,8 @@ function Content(): ReactNode {
           </IconButton>
         </div>
       </section>
-    </section>
+    </Cotntent>
   );
 }
 
-export default Content;
+export default AboutMe;

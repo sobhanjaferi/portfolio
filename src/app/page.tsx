@@ -1,9 +1,9 @@
-import Content from "@/features/content/aboutMe";
+import AboutMe from "@/features/aboutMe/aboutMe";
 
 export default function Home() {
   return (
     <div>
-      <Content />
+      <AboutMe />
     </div>
   );
 }
