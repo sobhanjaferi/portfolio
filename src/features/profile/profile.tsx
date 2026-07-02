@@ -45,7 +45,7 @@ function Profile(): ReactNode {
 
   return (
     <div
-      className={`h-28.5 sm:min-h-46 bg-white/7 p-3 sm:p-7 rounded-3xl border border-white/10 flex flex-col justify-start items-start gap-4 sm:gap-7 relative addTransition ${isOpenMenu && "h-77 sm:h-110 lg:h-95"}`}
+      className={`h-28.5 sm:min-h-46 bg-white/7 p-3 sm:p-7 rounded-2xl border border-white/10 flex flex-col justify-start items-start gap-4 sm:gap-7 addShadow relative addTransition ${isOpenMenu && "h-77 sm:h-110 lg:h-95"}`}
     >
       <PictureModal ref={pictureRef} />
 
@@ -62,15 +62,16 @@ function Profile(): ReactNode {
           onClick={handleOpenPictureModal}
         />
 
-        <div
-          className={`py-1.5 px-3.5 absolute top-0 right-0 bg-white/7 rounded-bl-3xl rounded-tr-3xl text-amber-300 active:opacity-30`}
+        <section
+          className="flex justify-center items-center gap-2 py-2 px-2.5 absolute top-0 right-0 cursor-pointer rounded-bl-2xl rounded-tr-2xl text-amber-300 active:opacity-30 bg-white/7 addShadow"
           onClick={handleClickOpenMenu}
         >
-          <section className="flex justify-center items-center gap-2">
-            <p className="hidden text-[13px] sm:inline">Show Contacts</p>
-            <FaAngleDown />
-          </section>
-        </div>
+          <p className="hidden text-[13px] sm:inline">Show Contacts</p>
+
+          <FaAngleDown
+            className={`addTransition ${isOpenMenu && "rotate-180"}`}
+          />
+        </section>
 
         <div className="flex flex-col justify-between items-start gap-3">
           <h1 className="text-xl sm:text-2xl">Sobhan Jafari</h1>

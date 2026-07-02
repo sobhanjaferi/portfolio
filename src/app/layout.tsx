@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-black/95 text-white p-4 sm:p-15 sm:container mx-auto addTransition"
+      className="bg-black/93 text-white p-4 sm:p-15 sm:container mx-auto addTransition"
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
