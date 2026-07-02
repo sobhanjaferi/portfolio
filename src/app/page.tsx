@@ -1,12 +1,9 @@
-import Content from "@/features/content/content";
-import Profile from "@/features/profile/profile";
+import Content from "@/features/content/aboutMe";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-start gap-5 sm:gap-7">
-      <Profile />
-
+    <div>
       <Content />
-    </main>
+    </div>
   );
 }
