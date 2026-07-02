@@ -1,7 +1,7 @@
 import Content from "@/components/content";
 import TimeLine from "@/components/timeLine";
 import { GrProjects } from "react-icons/gr";
-import { IoBookOutline } from "react-icons/io5";
+import { IoBookOutline, IoLanguageSharp } from "react-icons/io5";
 
 function Resume() {
   return (
@@ -32,12 +32,12 @@ function Resume() {
         </section>
 
         <section className="w-full flex justify-start items-start gap-2">
-          <TimeLine Icon={<GrProjects />} lineHeight={15} steps={1} />
+          <TimeLine Icon={<GrProjects />} lineHeight={10} steps={1} />
 
           <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-12">
             <h2 className="font-bold sm:text-xl">Experience</h2>
 
-            <section className="pt-4">
+            <section>
               <h3 className="border-b w-fit mb-2">Aio Learn</h3>
 
               <ol className="list-disc pl-10 text-white/70 flex flex-col justify-start items-start gap-5">
@@ -64,6 +64,22 @@ function Resume() {
                     reason I left Aio learn.
                   </p>
                 </section>
+              </ol>
+            </section>
+          </div>
+        </section>
+
+        <section className="w-full flex justify-start items-start gap-2">
+          <TimeLine Icon={<IoLanguageSharp />} lineHeight={10} steps={1} />
+
+          <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-12">
+            <h2 className="font-bold sm:text-xl">language</h2>
+
+            <section>
+              <h3 className="border-b w-fit mb-2">English</h3>
+
+              <ol className="list-disc pl-10 text-white/70 flex flex-col justify-start items-start gap-5">
+                <li>experience 3 years | 70%</li>
               </ol>
             </section>
           </div>
