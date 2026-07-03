@@ -90,21 +90,24 @@ function Header(): ReactNode {
           icon={MdOutlineMail}
           iconSize={23}
           info="sobhanjafarii87@gmail.com"
-          title="EMAIL"
+          title="email"
+          type="email"
         />
 
         <InfoItem
           icon={FiPhone}
           iconSize={23}
           info="+98 993 916 0928"
-          title="PHONE"
+          title="phone"
+          type="tel"
         />
 
         <InfoItem
           icon={IoLocationOutline}
           iconSize={23}
           info="Alborz , Karaj , Meshkindasht"
-          title="LOCATION"
+          title="location"
+          type="text"
         />
       </section>
 

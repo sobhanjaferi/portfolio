@@ -1,7 +1,5 @@
 import Cotntent from "@/components/content";
 import Portfolio from "@/features/portfolio/portfolio";
-import Image from "next/image";
-import Link from "next/link";
 
 export interface PortFolio {
   readonly id: number;

@@ -7,6 +7,7 @@ type Props = ComponentProps<"section"> & {
   title: string;
   info: string;
   iconSize: number;
+  type: "email" | "tel" | "text";
 };
 
 function InfoItem({
@@ -15,6 +16,7 @@ function InfoItem({
   title,
   className,
   iconSize,
+  type,
   ...otherProps
 }: Props): ReactNode {
   return (
@@ -29,9 +31,14 @@ function InfoItem({
       </IconButton>
 
       <div className="min-h-full flex flex-col justify-center items-start">
-        <p className="text-white/40 text-sm">{title}</p>
+        <p className="text-white/40 text-sm">{title.toUpperCase()}</p>
 
-        <p className="text-sm sm:text-lg">{info}</p>
+        <input
+          type={type}
+          value={info}
+          readOnly
+          className="text-sm sm:text-lg focus:outline-0"
+        />
       </div>
     </section>
   );
