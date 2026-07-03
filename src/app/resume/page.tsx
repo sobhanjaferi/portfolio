@@ -10,11 +10,10 @@ function Resume() {
         <section className="w-full flex justify-start items-start gap-2">
           <TimeLine
             Icon={<IoBookOutline size={20} />}
-            lineHeight={10}
+            lineHeight={8}
             steps={1}
           />
-
-          <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-12">
+          <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-9">
             <h2 className="font-bold sm:text-xl">Education</h2>
 
             <section>
@@ -32,9 +31,9 @@ function Resume() {
         </section>
 
         <section className="w-full flex justify-start items-start gap-2">
-          <TimeLine Icon={<GrProjects />} lineHeight={10} steps={1} />
+          <TimeLine Icon={<GrProjects />} lineHeight={8} steps={1} />
 
-          <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-12">
+          <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-9">
             <h2 className="font-bold sm:text-xl">Experience</h2>
 
             <section>
@@ -46,7 +45,7 @@ function Resume() {
 
                   <p className="text-[12px] ml-5">
                     I was a front end mentor at Aio learn I went in the class
-                    rooms for mentoring and dibuging students code and I liked
+                    rooms for mentoring and debugging students code and I liked
                     this job but after 3 months when we wanted to write the
                     Contract the Proposed salary was too low and I disagreed
                     with it for this reason I left Aio learn.
@@ -58,7 +57,7 @@ function Resume() {
 
                   <p className="text-[12px] ml-5">
                     I was a AI mentor at Aio learn I went in the class rooms for
-                    mentoring and dibuging students code and I liked this job
+                    mentoring and debugging students code and I liked this job
                     but after 3 months when we wanted to write the Contract the
                     Proposed salary was too low and I disagreed with it for this
                     reason I left Aio learn.
@@ -70,9 +69,9 @@ function Resume() {
         </section>
 
         <section className="w-full flex justify-start items-start gap-2">
-          <TimeLine Icon={<IoLanguageSharp />} lineHeight={10} steps={1} />
+          <TimeLine Icon={<IoLanguageSharp />} lineHeight={8} steps={1} />
 
-          <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-12">
+          <div className="w-full p-1 sm:p-2 flex flex-col justify-start items-start gap-9">
             <h2 className="font-bold sm:text-xl">language</h2>
 
             <section>

@@ -1,8 +1,9 @@
 import IconButton from "./iconButton";
 import TimeLineStep from "./timeLineStep";
+import {ReactNode} from "react";
 
 type Props = {
-  Icon: React.ReactNode;
+  Icon: ReactNode;
   steps: number;
   lineHeight: 2 | 5 | 8 | 10 | 12 | 15 | 17 | 18 | 22 | 30;
   firstLineHeight?: 2 | 5 | 8 | 10 | 12 | 15 | 17 | 18 | 22 | 30;

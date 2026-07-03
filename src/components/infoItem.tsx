@@ -19,7 +19,7 @@ function InfoItem({
 }: Props): ReactNode {
   return (
     <section
-      className={`flex justify-start items-center gap-3 sm:gap-6 w-full`}
+      className={`flex justify-start items-center gap-3 sm:gap-6 w-fit`}
       {...otherProps}
     >
       <IconButton

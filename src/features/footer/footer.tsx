@@ -33,7 +33,7 @@ function Footer() {
   const activeItem = usePathname();
 
   return (
-    <ul className="flex justify-center items-center gap-4">
+    <ul className="flex justify-center items-center gap-5">
       {navItems.map((item) => (
         <li
           key={item.id}

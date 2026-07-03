@@ -25,7 +25,7 @@ function AboutMe(): ReactNode {
       <section>
         <h2 className="text-2xl font-bold mb-2">Skills</h2>
 
-        <div className="w-full flex justify-start items-center gap-3 overflow-x-auto">
+        <div className="w-full flex justify-start items-center gap-3 overflow-x-auto pb-4">
           <IconButton className="min-w-30 h-30 rounded-lg bg-white/7 text-[50px] text-orange-600">
             <SiHtml5 />
           </IconButton>

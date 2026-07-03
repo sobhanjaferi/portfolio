@@ -12,6 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaGoogle } from "react-icons/fa";
 import { BsTelegram } from "react-icons/bs";
+import { FiPhone } from "react-icons/fi";
 import Link from "next/link";
 
 function Header(): ReactNode {
@@ -45,7 +46,7 @@ function Header(): ReactNode {
 
   return (
     <div
-      className={`h-28.5 sm:min-h-46 bg-white/7 p-3 sm:p-7 rounded-2xl border border-white/10 flex flex-col justify-start items-start gap-4 sm:gap-7 addShadow relative addTransition ${isOpenMenu && "h-77 sm:h-110 lg:h-95"}`}
+      className={`h-28.5 sm:min-h-46 bg-white/7 p-3 sm:p-7 rounded-2xl border border-white/10 flex flex-col justify-start items-start gap-4 sm:gap-7 addShadow relative addTransition ${isOpenMenu && "h-90 sm:h-125 xl:h-95"}`}
     >
       <PictureModal ref={pictureRef} />
 
@@ -83,13 +84,20 @@ function Header(): ReactNode {
       </section>
 
       <section
-        className={`w-full flex flex-col lg:flex-row justify-start items-start gap-3 border-b border-white/0 pb-4 sm:pb-7 ${!isOpenMenu ? "opacity-0 -z-10 transition-all duration-500 ease-in-out" : "transition-all duration-3000 ease-in-out border-white/25"}`}
+        className={`w-full flex flex-col xl:flex-row justify-start xl:justify-evenly items-start gap-3 border-b border-white/0 pb-4 sm:pb-7 ${!isOpenMenu ? "opacity-0 -z-10 transition-all duration-500 ease-in-out" : "transition-all duration-3000 ease-in-out border-white/25"}`}
       >
         <InfoItem
           icon={MdOutlineMail}
           iconSize={23}
           info="sobhanjafarii87@gmail.com"
           title="EMAIL"
+        />
+
+        <InfoItem
+          icon={FiPhone}
+          iconSize={23}
+          info="+98 993 916 0928"
+          title="PHONE"
         />
 
         <InfoItem
