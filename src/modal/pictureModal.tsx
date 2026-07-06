@@ -3,9 +3,10 @@ import { ComponentProps, MouseEvent, RefObject } from "react";
 
 type Props = ComponentProps<"dialog"> & {
   ref: RefObject<HTMLDialogElement | null>;
+  imgUrl: string;
 };
 
-function PictureModal({ ref, ...otherProps }: Props) {
+function PictureModal({ ref, imgUrl, ...otherProps }: Props) {
   const handleClosePictureModal = (e: MouseEvent<HTMLDialogElement>): void => {
     if (e.currentTarget == e.target) {
       ref.current?.close();
@@ -20,7 +21,7 @@ function PictureModal({ ref, ...otherProps }: Props) {
       onClick={handleClosePictureModal}
     >
       <Image
-        src={"/images/profile.jpeg"}
+        src={imgUrl}
         alt="profile img"
         width={200}
         height={200}
