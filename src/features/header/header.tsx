@@ -24,7 +24,7 @@ function Header(): ReactNode {
 
   useEffect(() => {
     const handleFetchData = async () => {
-      const data = await fetch("http://localhost:3000/api/profile")
+      const data = await fetch("/api/profile")
         .then((res) => res.json())
 
         .catch((error) => {
