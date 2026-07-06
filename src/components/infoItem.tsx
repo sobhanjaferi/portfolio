@@ -29,7 +29,6 @@ function InfoItem({
       >
         <Icon size={iconSize} />
       </IconButton>
-
       <div className="min-h-full flex flex-col justify-center items-start">
         <p className="text-white/40 text-sm">{title.toUpperCase()}</p>
 
