@@ -15,29 +15,13 @@ import { BsTelegram } from "react-icons/bs";
 import { FiPhone } from "react-icons/fi";
 import Link from "next/link";
 import { profileType } from "@/app/api/profile/route";
+import useFetch from "@/hooks/fetchData";
 
 function Header(): ReactNode {
-  const [data, setData] = useState<profileType | null>(null);
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
-
   const pictureRef = useRef<HTMLDialogElement | null>(null);
 
-  useEffect(() => {
-    const handleFetchData = async () => {
-      const data = await fetch("/api/profile")
-        .then((res) => res.json())
-
-        .catch((error) => {
-          console.log("error : " + error);
-        });
-
-      if (data !== null) {
-        setData(data);
-      }
-    };
-
-    handleFetchData();
-  }, []);
+  const { data, isLoading } = useFetch<profileType>("/api/profile");
 
   useEffect(() => {
     const handleMenu = async () => {
@@ -63,6 +47,13 @@ function Header(): ReactNode {
     setIsOpenMenu((old) => !old);
   };
 
+  if (isLoading)
+    return (
+      <div className="text-center my-5 sm:text-xl lg:text-2xl">Loading ...</div>
+    );
+
+  if (!data) return null;
+
   return (
     <div
       className={`h-28.5 sm:min-h-46 bg-white/7 p-3 sm:p-7 rounded-2xl border border-white/10 flex flex-col justify-start items-start gap-4 sm:gap-7 addShadow relative addTransition ${isOpenMenu && "h-90 sm:h-125 xl:h-95"}`}
@@ -79,7 +70,6 @@ function Header(): ReactNode {
               alt="profile img"
               width={80}
               height={80}
-              quality={100}
               className={`w-22 sm:w-31 h-22 sm:h-31 rounded-2xl sm:rounded-4xl active:opacity-30 cursor-pointer`}
               onClick={handleOpenPictureModal}
             />
