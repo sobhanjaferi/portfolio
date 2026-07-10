@@ -17,9 +17,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-black/93 text-white sm:container sm:mx-auto addTransition"
+      className="bg-black/93 text-white sm:container lg:max-w-300 sm:mx-auto addTransition"
     >
-      <body className="min-h-screen flex flex-col justify-between gap-5 sm:gap-7 p-4 pb-0 sm:p-15 sm:pb-0 relative">
+      <body className="min-h-screen flex flex-col justify-between gap-5 sm:gap-7 p-4 pb-0 sm:p-15 sm:pb-0">
         <ReactQueryProvider>
           <header>
             <Header />

@@ -1,19 +1,16 @@
-import { PortFolio } from "@/app/portfolio/page";
-import Image from "next/image";
 import Link from "next/link";
+import { PortFolio } from "./portfolioList";
 
 type Props = Omit<PortFolio, "id">;
 
 function Portfolio({ img, title, type, url }: Props) {
   return (
-    <Link href={url} className="w-full">
-      <section className="w-full min-h-60 max-h-85 sm:min-h-100 flex flex-col justify-between items-start gap-3">
-        <Image
+    <Link href={url}>
+      <section className=" min-h-60 max-h-85 sm:min-h-100 flex flex-col justify-between items-start gap-3">
+        <img
           src={img}
           alt={title}
-          width={320}
-          height={20}
-          className="w-full min-h-45 max-h-65 sm:min-h-85 rounded-xl active:opacity-30"
+          className="w-full lg:w-200 min-h-50 max-h-70 sm:min-h-85 rounded-xl active:opacity-30"
         />
 
         <div>
