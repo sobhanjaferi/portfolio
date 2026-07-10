@@ -16,6 +16,7 @@ import { FiPhone } from "react-icons/fi";
 import Link from "next/link";
 import { profileType } from "@/app/api/profile/route";
 import useFetch from "@/hooks/fetchData";
+import LoadingComponent from "@/components/loading";
 
 function Header(): ReactNode {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
@@ -47,10 +48,7 @@ function Header(): ReactNode {
     setIsOpenMenu((old) => !old);
   };
 
-  if (isLoading)
-    return (
-      <div className="text-center my-5 sm:text-xl lg:text-2xl">Loading ...</div>
-    );
+  if (isLoading) return <LoadingComponent />;
 
   if (!data) return null;
 
