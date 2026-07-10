@@ -19,7 +19,7 @@ import useFetch from "@/hooks/fetchData";
 import LoadingComponent from "@/components/loading";
 
 function Header(): ReactNode {
-  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(true);
   const pictureRef = useRef<HTMLDialogElement | null>(null);
 
   const { data, isLoading } = useFetch<profileType>("/api/profile");
