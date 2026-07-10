@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Footer from "@/features/footer/footer";
 import Header from "@/features/header/header";
+import ReactQueryProvider from "@/providers/reactQuery";
 
 export const metadata: Metadata = {
   title: "Sobhan Jafari",
@@ -16,18 +17,20 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-black/93 text-white sm:container sm:mx-auto addTransition"
+      className="bg-black/93 text-white sm:container lg:max-w-300 sm:mx-auto addTransition"
     >
-      <body className="min-h-screen flex flex-col justify-between gap-5 sm:gap-7 p-4 pb-0 sm:p-15 sm:pb-0 relative">
-        <header>
-          <Header />
-        </header>
+      <body className="min-h-screen flex flex-col justify-between gap-5 sm:gap-7 p-4 pb-0 sm:p-15 sm:pb-0">
+        <ReactQueryProvider>
+          <header>
+            <Header />
+          </header>
 
-        <main className="flex-1">{children}</main>
+          <main className="flex-1">{children}</main>
 
-        <footer className="bg-white/7 border border-white/10 rounded-t-2xl flex justify-center items-center p-4 -mb-5 sm:-mb-7">
-          <Footer />
-        </footer>
+          <footer className="bg-white/7 border border-white/10 rounded-t-2xl flex justify-center items-center p-4 -mb-5 sm:-mb-7">
+            <Footer />
+          </footer>
+        </ReactQueryProvider>
       </body>
     </html>
   );
