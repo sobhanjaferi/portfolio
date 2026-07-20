@@ -33,6 +33,13 @@ function PortfolioList() {
       title: "Digikala Clone",
       type: "Application",
     },
+    {
+      id: 4,
+      img: "/images/sneakers.png",
+      url: "https://sneakers-self-mu.vercel.app/",
+      title: "Sneakers shop",
+      type: "Application",
+    },
   ];
 
   return (
