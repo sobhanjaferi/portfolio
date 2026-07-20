@@ -21,7 +21,7 @@ function InfoItem({
 }: Props): ReactNode {
   return (
     <section
-      className={`flex justify-start items-center gap-3 sm:gap-6 w-fit`}
+      className={`flex justify-start items-center gap-3 sm:gap-6 w-full`}
       {...otherProps}
     >
       <IconButton
@@ -29,14 +29,14 @@ function InfoItem({
       >
         <Icon size={iconSize} />
       </IconButton>
-      <div className="min-h-full flex flex-col justify-center items-start">
+      <div className="min-h-full w-full flex flex-col justify-center items-start">
         <p className="text-white/40 text-sm">{title.toUpperCase()}</p>
 
         <input
           type={type}
           value={info}
           readOnly
-          className="text-sm sm:text-lg focus:outline-0"
+          className="text-sm sm:text-lg focus:outline-0 w-full"
         />
       </div>
     </section>
