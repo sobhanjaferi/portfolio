@@ -74,8 +74,8 @@ function Header(): ReactNode {
               <Image
                 src={data.profileImg}
                 alt="profile img"
-                width={80}
-                height={80}
+                width={1080}
+                height={1080}
                 className={`w-22 sm:w-31 h-22 sm:h-31 rounded-2xl sm:rounded-4xl active:opacity-30 cursor-pointer`}
                 onClick={handleOpenPictureModal}
               />
