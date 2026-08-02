@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 export interface itemType {
   content: string;
   title: string;
@@ -42,7 +44,7 @@ const profileData: profileType = {
 };
 
 export async function GET(): Promise<Response> {
-  return new Response(JSON.stringify(profileData), {
+  return new NextResponse(JSON.stringify(profileData), {
     headers: { "Content-Type": "application/json" },
     status: 200,
   });

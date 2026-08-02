@@ -23,8 +23,8 @@ function PictureModal({ ref, imgUrl, ...otherProps }: Props) {
       <Image
         src={imgUrl}
         alt="profile img"
-        width={200}
-        height={200}
+        width={1080}
+        height={1080}
         className="rounded-3xl sm:w-100 sm:h-100"
       />
     </dialog>
