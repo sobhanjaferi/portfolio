@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { PortFolio } from "./portfolioList";
 import Image from "next/image";
+import { PortFolio } from "@/app/api/portfolio/route";
 
 type Props = Omit<PortFolio, "id">;
 
