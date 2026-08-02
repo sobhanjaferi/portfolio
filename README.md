@@ -50,7 +50,8 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the result.
+Open [https://portfolio-pearl-eta-79.vercel.app](https://portfolio-pearl-eta-79.vercel.app/) in your browser to view the result.
+
 
 ## 📦 Deployment
 
