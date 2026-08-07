@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sobhan Jafari — Portfolio
 
-## Getting Started
+A personal portfolio Progressive Web App (PWA) built with Next.js, TypeScript, and Tailwind CSS to showcase my work as a front-end developer.
 
-First, run the development server:
+**Live Demo:** [portfolio-pearl-eta-79.vercel.app](https://portfolio-pearl-eta-79.vercel.app)
+
+---
+
+## 📖 About
+
+This is my personal portfolio site — a single place to learn about me, see my resume, and browse my project work. It's built as a PWA (installable, mobile-optimized) with a focus on clean architecture and responsive design.
+
+## ✨ Pages
+
+- **About Me** — introduction and background
+- **Resume** — skills, experience, and education
+- **Portfolio** — showcase of my front-end projects
+
+## 🛠️ Built With
+
+- **[Next.js](https://nextjs.org/)** – React framework, App Router
+- **[TypeScript](https://www.typescriptlang.org/)** – Static typing
+- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first styling
+- **PWA** – Installable, mobile web app capable
+
+## 🤖 Development Workflow
+
+This project was built with the help of AI coding assistants (Claude Code) as part of the development workflow, alongside manual implementation and review — reflecting how I work day-to-day to move faster while staying in control of code quality and architecture decisions.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/sobhanjaferi/portfolio.git
+
+# Move into the project directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://portfolio-pearl-eta-79.vercel.app](https://portfolio-pearl-eta-79.vercel.app/) in your browser to view the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Deployment
 
-## Learn More
+Deployed on [Vercel](https://vercel.com/), with automatic deployments on every push to `main`.
 
-To learn more about Next.js, take a look at the following resources:
+## 📬 Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Sobhan Jafari** — Front-End Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: sobhanjafarii87@gmail.com
+- GitHub: [@sobhanjaferi](https://github.com/sobhanjaferi)
+- LinkedIn: [sobhan-jafari](https://www.linkedin.com/in/sobhan-jafari-681301396/)
