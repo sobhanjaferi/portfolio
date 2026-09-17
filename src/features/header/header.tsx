@@ -3,14 +3,7 @@
 import InfoItem from "@/components/infoItem";
 import PictureModal from "@/modal/pictureModal";
 import Image from "next/image";
-import {
-  Fragment,
-  ReactNode,
-  Suspense,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { Fragment, ReactNode, useEffect, useRef, useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";

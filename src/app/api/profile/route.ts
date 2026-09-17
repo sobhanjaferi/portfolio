@@ -22,7 +22,7 @@ const profileData: profileType = {
   name: "Sobhan Jafari",
   jobTitle: "Front end Developer",
   profileImg: "/images/profile.jpeg",
-  linkedin: "https://www.linkedin.com/in/sobhan-jafari-681301396/",
+  linkedin: "https://www.linkedin.com/in/sobhan-jafari",
   github: "https://github.com/sobhanjaferi",
   emailLink: "https://mail.google.com/mail",
   telegram: "https://web.telegram.org/@sot837",
