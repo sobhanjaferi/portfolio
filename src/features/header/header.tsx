@@ -60,7 +60,7 @@ function Header(): ReactNode {
   if (!data) return null;
 
   return (
-    <Suspense fallback={<LoadingComponent />}>
+    <>
       <div
         className={`h-28.5 sm:min-h-46 bg-white/7 p-3 sm:p-7 rounded-2xl border border-white/10 flex flex-col justify-start items-start gap-4 sm:gap-7 addShadow relative addTransition ${isOpenMenu && "h-90 sm:h-125 xl:h-95"}`}
       >
@@ -161,7 +161,7 @@ function Header(): ReactNode {
           </Fragment>
         )}
       </div>
-    </Suspense>
+    </>
   );
 }
 

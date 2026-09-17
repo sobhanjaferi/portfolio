@@ -14,29 +14,29 @@ const portfolios: PortFolioListType = [
   {
     id: 1,
     img: "/images/sot837-bot.png",
-    url: "https://sot837-kwow6wp5v-sobhans-projects-73ea1f83.vercel.app/",
+    url: "https://sot837-bot.vercel.app/",
     title: "sot837 chatbot",
     type: "web / Application",
   },
   {
     id: 2,
+    img: "/images/Digikala.png",
+    url: "https://digikala-clone-gilt.vercel.app/",
+    title: "Digikala Clone",
+    type: "web / Application",
+  },
+  {
+    id: 3,
     img: "/images/sneakers.png",
     url: "https://sneakers-self-mu.vercel.app/",
     title: "Sneakers shop",
     type: "web / Application",
   },
   {
-    id: 3,
+    id: 4,
     img: "/images/university.png",
     url: "https://islamic-university-delta.vercel.app/",
     title: "Islamic University",
-    type: "web / Application",
-  },
-  {
-    id: 4,
-    img: "/images/adminPanel.png",
-    url: "https://admin-panel-hpcoqn4vd-sobhans-projects-73ea1f83.vercel.app/",
-    title: "Admin Panel",
     type: "web / Application",
   },
   {
@@ -55,9 +55,9 @@ const portfolios: PortFolioListType = [
   },
   {
     id: 7,
-    img: "/images/digikala.png",
-    url: "https://digikala-clone-gilt.vercel.app/",
-    title: "Digikala Clone",
+    img: "/images/adminPanel.png",
+    url: "https://admin-panel-hpcoqn4vd-sobhans-projects-73ea1f83.vercel.app/",
+    title: "Admin Panel",
     type: "web / Application",
   },
 ];
